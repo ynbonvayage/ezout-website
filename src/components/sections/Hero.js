@@ -5,6 +5,8 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
+import Logo from '../layout/partials/Logo';
+
 
 const propTypes = {
   ...SectionProps.types
@@ -60,12 +62,13 @@ const Hero = ({
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">
-            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              <span className="text-color-primary">EIDAR</span>
+            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200" style={{paddingBottom: 30}}>
+              <Logo width={256} height={256} />
+              {/* <span className="text-color-primary">EzOut</span> */}
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                We are creating a frictionless checkout solution by allowing grocery shoppers to find and pay for items on the cart itself
+                EzOut offers an AI-powered, low-cost smart shopping cart that not only increases grocers' profit margins but also personalizes the shopping experience at brick-and-mortar stores.
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
@@ -98,7 +101,7 @@ const Hero = ({
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
-            video="https://drive.google.com/file/d/17vk9ElLV-qoZDff-F5P-z6EMH6jPFcPQ/preview"
+            video="https://www.youtube.com/embed/80AT6no_xBo"
             videoTag="iframe" />
         </div>
       </div>

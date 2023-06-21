@@ -70,7 +70,7 @@ const Testimonial = ({
                   <span className="testimonial-item-name text-color-high">Matthew Mo</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">Machine Learning Engineer</a>
+                    <a href="#0">Product Development</a>
                   </span>
                 </div>
               </div>
@@ -89,7 +89,7 @@ const Testimonial = ({
                   <span className="testimonial-item-name text-color-high">Naman Gupta</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">Hardware & Operations</a>
+                    <a href="#0">Business Development</a>
                   </span>
                 </div>
               </div>
@@ -106,7 +106,7 @@ const Testimonial = ({
                   <span className="testimonial-item-name text-color-high">Adam Bournes</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">Frontend Engineer</a>
+                    <a href="#0">Application Developer</a>
                   </span>
                 </div>
               </div>
@@ -117,15 +117,34 @@ const Testimonial = ({
                 <img>
                 </img>
                 <Image
-                  src={require('../../assets/images/naman-profile.jpeg')}
+                  src={require('../../assets/images/dawn-profile.png')}
                   alt="Features split 03"
                   width={528}
                   height={396} />
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Naman Gupta</span>
+                  <span className="testimonial-item-name text-color-high">Dawn Rucker</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">Hardware & Operations</a>
+                    <a href="#0">Business Advisor</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item-inner">
+                <img>
+                </img>
+                <Image
+                  src={require('../../assets/images/mike-profile.png')}
+                  alt="Features split 03"
+                  width={528}
+                  height={396} />
+                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
+                  <span className="testimonial-item-name text-color-high">Mike McCready</span>
+                  <span className="text-color-low"> / </span>
+                  <span className="testimonial-item-link">
+                    <a href="#0">Industry Mentor</a>
                   </span>
                 </div>
               </div>

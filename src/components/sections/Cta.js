@@ -53,11 +53,11 @@ const Cta = ({
         >
           <div className="cta-slogan" style={{marginLeft: 40}}>
             <h3 className="m-0">
-              Want to contact us? Send an email to:
+            To schedule a demo send an email to:
               </h3>
           </div>
           <div className="cta-action" style={{marginRight: 40}}>
-            <Input id="newsletter" type="email" label="Subscribe" labelHidden hasIcon="right" value="naman.eidar@gmail.com">
+            <Input id="newsletter" type="email" label="Subscribe" labelHidden hasIcon="right" value="info@ezout.store">
               <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
               </svg>
