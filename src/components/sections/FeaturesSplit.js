@@ -51,7 +51,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: 'Current Market Problem', //The Current Problem:
-    paragraph: 'Every year grocery stores spend $4.3bn on improving the shopping experience, with shoppers still struggling finding items and waiting in long checkout lines. Here\'s our solution:'
+    paragraph: 'Labor shortage caused by COVID has increased understaffing, workloads, and poor shopping experiences, resulting in lower profit margins for grocers. Additionally, with the rise in inflation and unpredictable shopper behavior, grocers are struggling to survive.'
   };
 
   return (
@@ -67,14 +67,20 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  NO MORE LINES
+                  INTERACTIVE SHOPPING
                   </div>
                 <h3 className="mt-0 mb-12">
-                  On-Cart Checkout
-                  </h3>
+                  Personalized Shopping Experience
+                </h3>
                 <p className="m-0">
-                  With a tablet that shows the customers' carts and a camera that can scan items and automatically put them into the users cart, there's no longer a need for a line. All a user has to do is shop, scan, and put, pay, and walk out.
-                  </p>
+                Personalizes shopping experience and increases customer retention.
+                </p>
+                <p className="m-0">
+                  • Allows shoppers to pay on the trolley itself and saves their 10-15 mins by bypassing waiting at cashier’s register.
+                </p>
+                <p className="m-0">
+                  • Engages shoppers to buy more items by marketing promotional items/discount and recommending next best item that complements their basket. It increases their basket size by 30%.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -82,24 +88,31 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <Image
-                  src={require('../../assets/images/payment-demo.png')}
-                  alt="Features split 01"
-                  width={528}
-                  height={396} />
+              <Image
+                src={require('../../assets/images/payment-demo.jpg')}
+                alt="Features split 01"
+                width={528}
+                height={396}
+                style={{ borderRadius: '10px' }} />
               </div>
             </div>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  EASIER SHOPPING
+                NO MORE THEFTS
                   </div>
                 <h3 className="mt-0 mb-12">
-                In-Store Navigation
+                Reduced Shrinkage
                   </h3>
-                <p className="m-0">
-                  With screens that recommend various items and show their locations, it will be easier than ever to show customers the items they want. Plus with a screen that shows the various items used in some recipes, customers will be exposed to more items than was possible before this technology.
+                  <p className="m-0">
+                    Reduces shrinkage by more than 50%.
+                  </p>
+                  <p className="m-0">
+                    • AI powered anti-theft sensors monitor each item in every trolley and looks for unscanned/incorrect items, which saves grocer’s resources to monitor shoppers.
+                  </p>
+                  <p className="m-0">
+                    • Real-time insights update the store’s database as soon as an item is scanned, this keeps track of inventory in real-time.
                   </p>
               </div>
               <div className={
@@ -122,10 +135,16 @@ const FeaturesSplit = ({
                   MORE EFFICIENT OPERATIONS
                   </div>
                 <h3 className="mt-0 mb-12">
-                  The Best Data Possible
+                  Increased Store Efficiency
                   </h3>
-                <p className="m-0">
-                  With hotspot data that tracks customers' purchases, locations, and actions, businesses can organize their stores more than ever to optimize sales and promote items. Plus, a system that automatically keeps track of inventory allows stores to no longer worry over when they need to restock.
+                  <p className="m-0">
+                    Increases store efficiency by 60%.
+                  </p>
+                  <p className="m-0">
+                    • Saves labor cost at cashier’s register so that employees can focus on human required tasks such as assisting more shoppers, restocking inventory during peak hours, optimize curbside operations, backend operations, etc.
+                  </p>
+                  <p className="m-0">
+                    • Real-time insights is used for better decision-making in store layout, product placement and eventually more aisle space.
                   </p>
               </div>
               <div className={

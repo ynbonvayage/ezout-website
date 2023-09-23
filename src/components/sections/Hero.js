@@ -68,8 +68,7 @@ const Hero = ({
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                EzOut offers an AI-powered, low-cost smart shopping cart that not only increases grocers' profit margins but also personalizes the shopping experience at brick-and-mortar stores.
-              </p>
+                EzOut offers an affordable AI-driven ecosystem that boosts revenue and profit margins for grocers, while personalizing their shopper’s experience in physical grocery stores.              </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   {/* <Button tag="a" color="primary" wideMobile href="https://cruip.com/">

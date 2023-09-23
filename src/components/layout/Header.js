@@ -111,18 +111,24 @@ const Header = ({
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
-                    {/* <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
-                    </li> */}
+                    <li>
+                      <Link to="/" onClick={closeMenu}>Home</Link>
+                    </li>
+                    <li>
+                      <a href="https://docs.ezout.store" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Documentation</a>
+                    </li>
+                    <li>
+                      <Link to="/contact" onClick={closeMenu}>Contact</Link>
+                    </li>
                   </ul>
-                  {/* {!hideSignin &&
+                  {!hideSignin &&
                     <ul
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
+                        <Link to="/documentation" className="button button-light button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
                       </li>
-                    </ul>} */}
+                    </ul>}
                 </div>
               </nav>
             </>}

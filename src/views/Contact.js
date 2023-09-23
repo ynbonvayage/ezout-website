@@ -4,17 +4,24 @@ import Hero from '../components/sections/Hero';
 import FeaturesTiles from '../components/sections/FeaturesTiles';
 import FeaturesSplit from '../components/sections/FeaturesSplit';
 import Testimonial from '../components/sections/Testimonial';
-import Cta from '../components/sections/Cta';
+import Contact from '../components/sections/Contact';
 
 const Home = () => {
 
   return (
     <>
-      <Hero className="illustration-section-01" />
-      {/* <FeaturesTiles /> */}
+      {/* <Hero className="illustration-section-01" />
+      <FeaturesTiles />
       <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
-      <Testimonial topDivider />
-      {/* <Cta split /> */}
+      <Testimonial topDivider /> */}
+    <div style={{ 
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      height: '80vh' // vh stands for viewport height
+    }}>
+      <Contact split />
+    </div>
 
     </>
   );
