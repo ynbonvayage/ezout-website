@@ -112,22 +112,22 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="/" onClick={closeMenu}>Home</Link>
+                      <Link to="/" onClick={closeMenu}>About</Link>
                     </li>
                     <li>
                       <a href="https://docs.ezout.store" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Documentation</a>
                     </li>
                     <li>
-                      <Link to="/contact" onClick={closeMenu}>Contact</Link>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScX6QRPLkQSC2KM5HmIyW-3toy2CP_v0RxCyF7Jw-U43SdLrA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Contact</a>
                     </li>
                   </ul>
                   {!hideSignin &&
                     <ul
                       className="list-reset header-nav-right"
                     >
-                      <li>
+                      {/* <li>
                         <Link to="/documentation" className="button button-light button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
-                      </li>
+                      </li> */}
                     </ul>}
                 </div>
               </nav>

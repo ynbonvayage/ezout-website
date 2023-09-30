@@ -73,13 +73,16 @@ const FeaturesSplit = ({
                   Personalized Shopping Experience
                 </h3>
                 <p className="m-0">
-                Personalizes shopping experience and increases customer retention.
+                 • AI assistant reduces cognitive load on shoppers, creating a more enjoyable experience
                 </p>
                 <p className="m-0">
-                  • Allows shoppers to pay on the trolley itself and saves their 10-15 mins by bypassing waiting at cashier’s register.
+                 • Increases customer retention / brand loyalty
                 </p>
                 <p className="m-0">
-                  • Engages shoppers to buy more items by marketing promotional items/discount and recommending next best item that complements their basket. It increases their basket size by 30%.
+                 • saves customer time by allowing payment through the cart system
+                </p>
+                <p className="m-0">
+                  • Increases purchase ammount by 30% on average through personalized recommendations and item promotion
                 </p>
               </div>
               <div className={
@@ -89,10 +92,10 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
               <Image
-                src={require('../../assets/images/payment-demo.jpg')}
+                src={require('../../assets/images/payment-demo.jpeg')}
                 alt="Features split 01"
                 width={528}
-                height={396}
+                height={400}
                 style={{ borderRadius: '10px' }} />
               </div>
             </div>
@@ -106,13 +109,13 @@ const FeaturesSplit = ({
                 Reduced Shrinkage
                   </h3>
                   <p className="m-0">
-                    Reduces shrinkage by more than 50%.
+                    • AI powered anti-theft systems reduce shrinkage by more than 50%
                   </p>
                   <p className="m-0">
-                    • AI powered anti-theft sensors monitor each item in every trolley and looks for unscanned/incorrect items, which saves grocer’s resources to monitor shoppers.
+                    • Lowers the cost of anti-theft measures by stores
                   </p>
                   <p className="m-0">
-                    • Real-time insights update the store’s database as soon as an item is scanned, this keeps track of inventory in real-time.
+                    • Real-time database updates of store inventory allow for notifications of potential theft
                   </p>
               </div>
               <div className={
@@ -137,14 +140,15 @@ const FeaturesSplit = ({
                 <h3 className="mt-0 mb-12">
                   Increased Store Efficiency
                   </h3>
+                  <br/>
                   <p className="m-0">
-                    Increases store efficiency by 60%.
+                    • Reduces cost of running stores by up to 60%
                   </p>
                   <p className="m-0">
-                    • Saves labor cost at cashier’s register so that employees can focus on human required tasks such as assisting more shoppers, restocking inventory during peak hours, optimize curbside operations, backend operations, etc.
+                    • Saved labor of cashiers allow for workers to assist shoppers and fill other needs of the store
                   </p>
                   <p className="m-0">
-                    • Real-time insights is used for better decision-making in store layout, product placement and eventually more aisle space.
+                    • Real-time insights can lead to more profitable store layouts and product placements
                   </p>
               </div>
               <div className={
@@ -154,7 +158,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('../../assets/images/data-visualization.png')}
+                  src={require('../../assets/images/heatmap.jpeg')}
                   alt="Features split 03"
                   width={528}
                   height={396}
