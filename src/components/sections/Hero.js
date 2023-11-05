@@ -100,7 +100,7 @@ const Hero = ({
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
-            video="https://www.youtube.com/embed/80AT6no_xBo"
+            video="https://www.youtube.com/embed/_00xyVB9mfs?si=MKnq5ybPwhxKy2NG"
             videoTag="iframe" />
         </div>
       </div>

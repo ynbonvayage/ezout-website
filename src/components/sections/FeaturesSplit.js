@@ -51,7 +51,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: 'Current Market Problem', //The Current Problem:
-    paragraph: 'Labor shortage caused by COVID has increased understaffing, workloads, and poor shopping experiences, resulting in lower profit margins for grocers. Additionally, with the rise in inflation and unpredictable shopper behavior, grocers are struggling to survive.'
+    paragraph: ''
   };
 
   return (
@@ -82,7 +82,7 @@ const FeaturesSplit = ({
                  • saves customer time by allowing payment through the cart system
                 </p>
                 <p className="m-0">
-                  • Increases purchase ammount by 30% on average through personalized recommendations and item promotion
+                  • Increases purchase amount by 30% on average through personalized recommendations and item promotion
                 </p>
               </div>
               <div className={

@@ -9,6 +9,12 @@ import * as serviceWorker from './serviceWorker';
 //import './App.css';
 import './assets/scss/style.scss';
 
+
+global.process = {
+  env: { DEBUG: undefined },
+};
+
+
 const history = createBrowserHistory();
 
 ReactDOM.render(
