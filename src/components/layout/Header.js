@@ -115,6 +115,9 @@ const Header = ({
                       <Link to="/" onClick={closeMenu}>About</Link>
                     </li>
                     <li>
+                      <Link to="/investor-newsletter" onClick={closeMenu}>Investor Newsletter</Link>
+                    </li>
+                    <li>
                       <a href="https://docs.ezout.store" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Documentation</a>
                     </li>
                     <li>

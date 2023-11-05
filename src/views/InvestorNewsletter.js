@@ -4,7 +4,7 @@ import Hero from '../components/sections/Hero';
 import FeaturesTiles from '../components/sections/FeaturesTiles';
 import FeaturesSplit from '../components/sections/FeaturesSplit';
 import Testimonial from '../components/sections/Testimonial';
-import Contact from '../components/sections/Contact';
+import InvestorNewsletter from '../components/sections/InvestorNewsletter';
 
 const Home = () => {
 
@@ -20,7 +20,7 @@ const Home = () => {
       alignItems: 'center', 
       height: '80vh' // vh stands for viewport height
     }}>
-      <Contact split />
+      <InvestorNewsletter />
     </div>
 
     </>

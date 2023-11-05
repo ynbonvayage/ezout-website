@@ -51,7 +51,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: 'Current Market Problem', //The Current Problem:
-    paragraph: ''
+    paragraph: 'Labor shortage caused by COVID have increased understaffing, workloads, and poor shopping experiences, resulting in lower profit margins for grocers. Additionally, rises in inflation and unpredictable shopper behavior are causin some grocers to struggle to survive.'
   };
 
   return (
