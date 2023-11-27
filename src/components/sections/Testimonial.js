@@ -131,25 +131,6 @@ const Testimonial = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom">
-              <div className="tiles-item-inner">
-                <img>
-                </img>
-                <Image
-                  src={require('../../assets/images/mike-profile.png')}
-                  alt="Features split 03"
-                  width={528}
-                  height={396} />
-                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Mike McCready</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">Industry Mentor</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
