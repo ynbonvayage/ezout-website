@@ -24,13 +24,13 @@ COPY --from=build /app/build /usr/share/nginx/html
 
 # Copy Nginx configuration and certificates
 # COPY nginx.conf /etc/nginx/nginx.conf
-COPY cert.pem /etc/ssl/certs/cert.pem
-COPY key.pem /etc/ssl/private/key.pem
+# COPY cert.pem /etc/ssl/certs/cert.pem
+# COPY key.pem /etc/ssl/private/key.pem
+# EXPOSE 443
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Expose both port 80 and 443
 EXPOSE 80
-EXPOSE 443
 
 # Start Nginx and keep it running
 CMD ["nginx", "-g", "daemon off;"]
