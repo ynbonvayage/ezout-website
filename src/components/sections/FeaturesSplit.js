@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
 
+import Modal from '../elements/Modal';
 const propTypes = {
   ...SectionSplitProps.types
 }
@@ -26,7 +27,17 @@ const FeaturesSplit = ({
   imageFill,
   ...props
 }) => {
+  const [videoModalActive, setVideomodalactive] = useState(false);
 
+  const openModal = (e) => {
+    e.preventDefault();
+    setVideomodalactive(true);
+  }
+
+  const closeModal = (e) => {
+    e.preventDefault();
+    setVideomodalactive(false);
+  }   
   const outerClasses = classNames(
     'features-split section',
     topOuterDivider && 'has-top-divider',
@@ -62,6 +73,28 @@ const FeaturesSplit = ({
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
+          {/* second video   */}
+          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
+            <a
+              data-video="https://player.vimeo.com/video/174002812"
+              href="#0"
+              aria-controls="video-modal"
+              onClick={openModal}
+            >
+              <Image
+                className="has-shadow"
+                src={require('../../assets/images/initial-page.png')}
+                alt="Hero"
+                width={896}
+                height={504} />
+            </a>
+          </div>
+          <Modal
+            id="video-modal"
+            show={videoModalActive}
+            handleClose={closeModal}
+            video="https://bit.ly/3VZ6R0g"
+            videoTag="iframe" />
           <div className={splitClasses}>
 
             <div className="split-item">

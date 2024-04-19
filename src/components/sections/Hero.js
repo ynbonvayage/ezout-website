@@ -81,6 +81,7 @@ const Hero = ({
               </div>
             </div>
           </div>
+          {/* first video   */}
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
             <a
               data-video="https://player.vimeo.com/video/174002812"
@@ -100,7 +101,7 @@ const Hero = ({
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
-            video="https://www.youtube.com/embed/Y2BzfOyXnok?si=385UphQZWE072Ibt"
+            video="https://bit.ly/4aEAQiA"
             videoTag="iframe" />
         </div>
       </div>
