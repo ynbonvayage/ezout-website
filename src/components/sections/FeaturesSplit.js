@@ -76,19 +76,20 @@ const FeaturesSplit = ({
                                     Our advanced computer vision platform provides rapid image analysis and precise object recognition capabilities.
                                     Simply upload an image for immediate processing!
                                 </p>
+                                <div style={{height: '8px'}} />
                                 <p className="m-0 reduces-cognitive ">
-                                    1. Upload an image<br/>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;- Prepare your image file for analysis
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Step One: Upload an image</strong><br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Prepare your image file for analysis
                                 </p>
                                 <p className="m-0 reduces-cognitive">
-                                    2. Immediate processing<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Step Two: Immediate processing</strong><br/>
 
-                                    &nbsp;&nbsp;&nbsp;&nbsp;- The platform automatically begins analyzing the uploaded image
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Vision API automatically analyzes the uploaded image
                                 </p>
                                 <p className="m-0 reduces-cognitive">
-                                    3. Receive detailed results<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Step Three: Receive detailed results</strong><br/>
 
-                                    &nbsp;&nbsp;&nbsp;&nbsp;- Get output on image analysis and object recognition
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Get output on image analysis and object recognition
                                 </p>
                             </div>
                             <div className={
