@@ -1,112 +1,123 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import classNames from 'classnames';
-import { SectionProps } from '../../utils/SectionProps';
-import ButtonGroup from '../elements/ButtonGroup';
+import {SectionProps} from '../../utils/SectionProps';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
-import Modal from '../elements/Modal';
 import Logo from '../layout/partials/Logo';
-
+import {FaArrowCircleRight} from "react-icons/fa";
+import Modal from '../elements/Modal';
 
 const propTypes = {
-  ...SectionProps.types
+    ...SectionProps.types
 }
 
 const defaultProps = {
-  ...SectionProps.defaults
+    ...SectionProps.defaults
 }
 
 const Hero = ({
-  className,
-  topOuterDivider,
-  bottomOuterDivider,
-  topDivider,
-  bottomDivider,
-  hasBgColor,
-  invertColor,
-  ...props
-}) => {
+                  className,
+                  topOuterDivider,
+                  bottomOuterDivider,
+                  topDivider,
+                  bottomDivider,
+                  hasBgColor,
+                  invertColor,
+                  ...props
+              }) => {
 
-  const [videoModalActive, setVideomodalactive] = useState(false);
+    const outerClasses = classNames('hero section', topOuterDivider && 'has-top-divider', bottomOuterDivider && 'has-bottom-divider', hasBgColor && 'has-bg-color', invertColor && 'invert-color', className);
 
-  const openModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(true);
-  }
+    const innerClasses = classNames('hero-inner section-inner', topDivider && 'has-top-divider', bottomDivider && 'has-bottom-divider');
 
-  const closeModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(false);
-  }   
+    const [videoModalActive, setVideomodalactive] = useState(false);
 
-  const outerClasses = classNames(
-    'hero section center-content',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
-    className
-  );
+    const openModal = (e) => {
+        e.preventDefault();
+        setVideomodalactive(true);
+    }
 
-  const innerClasses = classNames(
-    'hero-inner section-inner',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider'
-  );
+    const closeModal = (e) => {
+        e.preventDefault();
+        setVideomodalactive(false);
+    }
 
-  return (
-    <section
-      {...props}
-      className={outerClasses}
-    >
-      <div className="container-sm">
-        <div className={innerClasses}>
-          <div className="hero-content">
-            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200" style={{paddingBottom: 30}}>
-              <Logo width={256} height={256} />
-              {/* <span className="text-color-primary">EzOut</span> */}
-            </h1>
-            <div className="container-xs">
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                EzOut offers an affordable AI-driven ecosystem that boosts revenue and profit margins for grocers, while personalizing their shopper’s experience in physical grocery stores.              </p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
-                <ButtonGroup>
-                  {/* <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
-                    Get started
-                    </Button> */}
-                  {/* <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
-                    View on Github
-                    </Button> */}
-                </ButtonGroup>
-              </div>
+    return (
+        <section
+            {...props}
+            className={outerClasses}
+        >
+            <div className="container">
+                <div className={innerClasses}
+                     style={{
+                         display: 'flex',
+                         flexWrap: 'wrap',
+                         alignItems: 'center',
+                         justifyContent: 'space-between',
+                     }}>
+                    <div className="hero-content" style={{
+                        flex: '1 1 300px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignItems: 'flex-start',
+                        textAlign: 'left',
+                        marginBottom: '2rem',
+                        minWidth: '300px',
+                    }}>
+                        <h1 className="mt-0 mb-100"
+                            style={{
+                                fontSize: 'clamp(1.5rem, 4vw, 2.5rem)',
+                                color: '#2C5364',
+                                marginTop: '1rem',
+                                lineHeight: 1.5,
+                                wordSpacing: '0.4em',
+                            }}>
+                            Elevate your<br/>
+                            grocery store<br/>
+                            experience
+                        </h1>
+                        <div className="container-xs">
+                            <Button tag="a" wideMobile onClick={openModal} style={{
+                                backgroundColor: '#EFD372',
+                                color: '#000000',
+                                border: 'none',
+                                borderRadius: '10px',
+                                padding: '10px 20px',
+                                fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
+                            }}>
+                                Explore Now <FaArrowCircleRight style={{marginLeft: '8px'}}/>
+                            </Button>
+                        </div>
+                        <Modal
+                            id="video-modal"
+                            show={videoModalActive}
+                            handleClose={closeModal}
+                            video="https://bit.ly/3VZ6R0g"
+                            videoTag="iframe"/>
+                    </div>
+                    <div className="hero-figure" style={{
+                        flex: '1 1 300px',
+                        display: 'flex',
+                        justifyContent: 'flex-end',
+                        minWidth: '300px',
+                        maxWidth: '100%',
+                    }}>
+                        <Image
+                            src={require('../../assets/images/payment-demo.jpeg')}
+                            alt="Features split 01"
+                            width={528}
+                            height={400}
+                            style={{
+                                borderRadius: '10px',
+                                maxWidth: '100%',
+                                height: 'auto',
+                            }}/>
+                    </div>
+                </div>
             </div>
-          </div>
-          {/* first video   */}
-          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <a
-              data-video="https://player.vimeo.com/video/174002812"
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
-              <Image
-                className="has-shadow"
-                src={require('../../assets/images/initial-page.png')}
-                alt="Hero"
-                width={896}
-                height={504} />
-            </a>
-          </div>
-          <Modal
-            id="video-modal"
-            show={videoModalActive}
-            handleClose={closeModal}
-            video="https://bit.ly/4aEAQiA"
-            videoTag="iframe" />
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 }
 
 Hero.propTypes = propTypes;

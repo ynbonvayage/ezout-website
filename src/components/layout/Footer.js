@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import Logo from './partials/Logo';
 import FooterNav from './partials/FooterNav';
 import FooterSocial from './partials/FooterSocial';
+import './Footer.css'
 
 const propTypes = {
   topOuterDivider: PropTypes.bool,
@@ -42,8 +43,8 @@ const Footer = ({
           )}>
           <div className="footer-top space-between text-xxs">
             <Logo />
-            <div className="footer-copyright">Made by <a href="https://cruip.com">EzOut</a>. All right reserved</div>
-            <FooterSocial />
+            <div className="footer-copyright">Made by <a href="https://cruip.com" className="ezout-link">EzOut</a>. All rights reserved</div>
+            {/*<FooterSocial />*/}
           </div>
           {/* <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />

@@ -1,0 +1,194 @@
+.cta-inner {
+    padding: 48px;
+    border-radius: 16px;
+}
+
+.background-green {
+    background-color: #8ab596 !important;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-title {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.cta-action {
+    display: flex;
+    gap: 10px;
+}
+
+.cta-input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #3A4F55;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.font-size-22{
+    font-size: 18px !important
+}
+
+
+@media (max-width: 768px) {
+    .cta-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cta-action {
+        width: 100%;
+    }
+
+    .cta-input {
+        flex-grow: 1;
+    }
+}
+
+/* Footer section styling */
+.site-footer {
+    background-color: #ffffff;
+    padding: 60px 0;
+    margin-top: 40px;
+}
+
+/* Container for footer content */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Common styles for contact and company info sections */
+.contact-info, .company-info {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Right-align content in contact info section and center the column */
+.contact-info {
+    align-items: flex-end; /* Right-align the content */
+    justify-content: center; /* Center the column vertically */
+    padding-right: 120px;
+    height: 100%; /* Ensure full height */
+}
+
+/* Center-align content in company info section */
+.company-info {
+    align-items: center;
+    padding-left: 40px;
+}
+
+/* Vertical line separator between sections */
+.vertical-line {
+    width: 1px;
+    background-color: #e0e0e0;
+    margin: 0 20px;
+    align-self: stretch;
+}
+
+/* Heading styles for both sections */
+.contact-info h3, .company-info h3 {
+    color: #3A4F55;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Paragraph styles for both sections */
+.contact-info p, .company-info p {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Right-align text in contact info */
+.contact-info p {
+    text-align: right;
+}
+
+/* Center-align text in company info */
+.company-info p {
+    text-align: center;
+}
+
+/* Social icons container */
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Individual social icon styling */
+.social-icon {
+    margin: 0 7.5px;
+    color: #3A4F55;
+    font-size: 20px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    /* Stack sections vertically on small screens */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Full width and center alignment for both sections on small screens */
+    .contact-info, .company-info {
+        width: 100%;
+        margin-bottom: 30px;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Center-align all text on small screens */
+    .contact-info p, .company-info p {
+        text-align: center;
+    }
+
+    /* Hide vertical line on small screens */
+    .vertical-line {
+        display: none;
+    }
+
+    /* Add top border to company info section on small screens */
+    .company-info {
+        padding-top: 30px;
+        border-top: 1px solid #e0e0e0;
+    }
+}
+
+.social-icon {
+    color: #304b59 !important; /* Default color - you can change this */
+    transition: color 0.3s ease;
+}
+
+.max-width{
+    max-width: 90% !important;
+    width: 100%;
+}

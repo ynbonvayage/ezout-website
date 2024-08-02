@@ -1,74 +1,100 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { SectionProps } from '../../utils/SectionProps';
-import Input from '../elements/Input';
+import {SectionProps} from '../../utils/SectionProps';
+import './Cta.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const propTypes = {
-  ...SectionProps.types,
-  split: PropTypes.bool
+    ...SectionProps.types,
+    split: PropTypes.bool
 }
 
 const defaultProps = {
-  ...SectionProps.defaults,
-  split: false
+    ...SectionProps.defaults,
+    split: false
 }
 
 const Cta = ({
-  className,
-  topOuterDivider,
-  bottomOuterDivider,
-  topDivider,
-  bottomDivider,
-  hasBgColor,
-  invertColor,
-  split,
-  ...props
-}) => {
+                 className,
+                 topOuterDivider,
+                 bottomOuterDivider,
+                 topDivider,
+                 bottomDivider,
+                 hasBgColor,
+                 invertColor,
+                 split,
+                 ...props
+             }) => {
 
-  const outerClasses = classNames(
-    'cta section center-content-mobile reveal-from-bottom',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
-    className
-  );
+    const outerClasses = classNames(
+        'cta section center-content-mobile reveal-from-bottom',
+        topOuterDivider && 'has-top-divider',
+        bottomOuterDivider && 'has-bottom-divider',
+        hasBgColor && 'has-bg-color',
+        invertColor && 'invert-color',
+        className
+    );
 
-  const innerClasses = classNames(
-    'cta-inner section-inner',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider',
-    split && 'cta-split'
-  );  
-
-  return (
-    <section
-      {...props}
-      className={outerClasses}
-    >
-      <div className="container">
-        <div
-          className={innerClasses}
-        >
-          <div className="cta-slogan" style={{marginLeft: 40}}>
-            <h3 className="m-0">
-            To schedule a demo send an email to:
-              </h3>
-          </div>
-          <div className="cta-action" style={{marginRight: 40}}>
-            <Input id="newsletter" type="email" label="Subscribe" labelHidden hasIcon="right" value="info@ezout.store">
-              <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
-              </svg>
-            </Input>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+    return (
+        <>
+            <section
+                {...props}
+                className={outerClasses}
+            >
+                <div className="container max-width">
+                    <div className="cta-inner background-green ">
+                        <div className="cta-content">
+                            <h2 className="cta-title ">
+                                Subscribe to<br/>
+                                our Newsletter
+                            </h2>
+                            <div className="cta-action font-size-22">
+                                <input
+                                    type="email"
+                                    placeholder="Your Email Address"
+                                    className="cta-input"
+                                />
+                                <button className="cta-button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <Footer/>
+        </>
+    );
 }
 
+
+const Footer = () => {
+    return (
+        <footer className="site-footer ">
+            <div className="container ">
+                <div className="footer-content">
+                    <div className="contact-info">
+                        <h3>Contact Us</h3>
+                        <p><strong>Email</strong><br/>xxxx@ezout.com</p>
+                        <p><strong>Phone</strong><br/>88888888</p>
+                        <p><strong>Address</strong><br/>100 Fore St, Portland, ME,USA</p>
+                    </div>
+                    <div className="vertical-line"></div>
+                    <div className="company-info">
+                        <h3>Ezout</h3>
+                        <p>Simply dummy text of the printing and typesetting industry.<br/>Lorem Ipsum simply dummy text
+                            of the printing</p>
+                        <div className="social-icons">
+                            <a href="https://www.google.com/" className="social-icon"><FontAwesomeIcon icon={faInstagram} /></a>
+                            <a href="https://www.facebook.com/" className="social-icon"><FontAwesomeIcon icon={faFacebookF} /></a>
+                            <a href="https://twitter.com/" className="social-icon"><FontAwesomeIcon icon={faTwitter} /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
+}
 Cta.propTypes = propTypes;
 Cta.defaultProps = defaultProps;
 

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2465fc8b-543a-4f9c-9864-dd7e7a6edbe3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sections/Cta.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sections/FeaturesSplit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sections/FeaturesTiles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sections/Hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-01.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-02.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-03.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-05.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-05.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/settings/base/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/settings/base/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/theme/sections/_features-tiles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/theme/sections/_features-tiles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/Cta.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Cta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/FeaturesSplit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/FeaturesSplit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/FeaturesTiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/FeaturesTiles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2jfxufy16VumCqLlnT4Y5Z9ZEoU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yinna/IdeaProjects/ezout-website/src/assets/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="ezout-website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ezout-website" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ezout-website" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="ezout-website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="ezout-website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="ezout-website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="ezout-website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2465fc8b-543a-4f9c-9864-dd7e7a6edbe3" name="Changes" comment="" />
+      <created>1721792157506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721792157506</updated>
+      <workItem from="1721792161791" duration="1443000" />
+      <workItem from="1721936611904" duration="110000" />
+      <workItem from="1721936738585" duration="445000" />
+      <workItem from="1721937585829" duration="808000" />
+      <workItem from="1721938397816" duration="17000" />
+      <workItem from="1721938416747" duration="627000" />
+      <workItem from="1721939069212" duration="32000" />
+      <workItem from="1721939103429" duration="11207000" />
+      <workItem from="1722025354573" duration="4651000" />
+      <workItem from="1722218755329" duration="27954000" />
+      <workItem from="1722394291654" duration="383000" />
+      <workItem from="1722408474263" duration="3139000" />
+      <workItem from="1722450753604" duration="4736000" />
+      <workItem from="1722460542737" duration="1000" />
+      <workItem from="1722473848895" duration="8244000" />
+      <workItem from="1722547077659" duration="5058000" />
+      <workItem from="1722616204470" duration="619000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
