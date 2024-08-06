@@ -4,6 +4,7 @@ import {SectionSplitProps} from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
 import './FeaturesSplit.css'
+import axios from 'axios';
 
 import Modal from '../elements/Modal';
 
@@ -29,7 +30,10 @@ const FeaturesSplit = ({
                            imageFill,
                            ...props
                        }) => {
-    const [videoModalActive, setVideomodalactive] = useState(false);
+    const [file, setFile] = useState(null);
+    const [imagePreview, setImagePreview] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [results, setResults] = useState(null);
 
     const outerClasses = classNames(
         'features-split section',
@@ -53,8 +57,46 @@ const FeaturesSplit = ({
         alignTop && 'align-top'
     );
 
+    const handleFileChange = (event) => {
+        const selectedFile = event.target.files[0];
+        setFile(selectedFile);
+        setImagePreview(URL.createObjectURL(selectedFile));
+    };
+
+    const handleDrop = (event) => {
+        event.preventDefault();
+        const droppedFile = event.dataTransfer.files[0];
+        setFile(droppedFile);
+        setImagePreview(URL.createObjectURL(droppedFile));
+    };
+
+    const handleDragOver = (event) => {
+        event.preventDefault();
+    };
+
+    const handleUpload = async () => {
+        if (!file) return;
+
+        setLoading(true);
+        const formData = new FormData();
+        formData.append('image', file);
+
+        try {
+            const response = await axios.post('YOUR_API_ENDPOINT', formData);
+            setResults(response.data);
+        } catch (error) {
+            console.error('Error uploading file:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     const FileUploadArea = () => (
-        <div className="file-upload-area">
+        <div
+            className="file-upload-area"
+            onDrop={handleDrop}
+            onDragOver={handleDragOver}
+        >
             <div className="upload-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -64,10 +106,16 @@ const FeaturesSplit = ({
             </div>
             <p className="upload-text">Drop files or Browse</p>
             <p className="file-formats">Supported formats: png, jpeg, jpg</p>
-            <button className="select-file-btn">SELECT FILE</button>
+            <input
+                type="file"
+                onChange={handleFileChange}
+                accept="image/png, image/jpeg, image/jpg"
+                style={{ display: 'none' }}
+                id="file-input"
+            />
+            <label htmlFor="file-input" className="select-file-btn">SELECT FILE</label>
         </div>
     );
-
 
     return (
         <section
@@ -129,13 +177,28 @@ const FeaturesSplit = ({
                             </div>
                         </div>
 
-                        {/* New "Try the API" section */}
                         <div className="split-item try-api-section">
                             <div className="file-upload-container">
-                                <FileUploadArea />
+                                {!imagePreview && <FileUploadArea />}
+                                {imagePreview && (
+                                    <div>
+                                        <img src={imagePreview} alt="Preview" style={{ maxWidth: '100%', borderRadius: '10px' }} />
+                                        {!loading && !results && (
+                                            <button onClick={handleUpload} className="confirm-btn">Confirm</button>
+                                        )}
+                                    </div>
+                                )}
+                                {loading && <div className="loading">Loading...</div>}
+                                {results && (
+                                    <div className="results">
+                                        <h3>Detected Result</h3>
+                                        {/* Display your results here */}
+                                        <button onClick={() => { setFile(null); setImagePreview(null); setResults(null); }} className="reset-btn">Reset</button>
+                                        <button onClick={() => { setFile(null); setImagePreview(null); setResults(null); }} className="new-file-btn">New File</button>
+                                    </div>
+                                )}
                             </div>
                         </div>
-
 
 
                         <div className="split-item ">
