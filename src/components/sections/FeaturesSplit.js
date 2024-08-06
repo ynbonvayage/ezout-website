@@ -135,7 +135,7 @@ const FeaturesSplit = ({
                                 <h1 className="mt-0 mb-12 personalized-shopping">
                                     Vision API
                                     <a href="https://docs.ezout.store/docs/vision-detect" className="api-doc-button">
-                                        <span>API Doc</span>
+                                        <span >API Doc</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                             <line x1="7" y1="17" x2="17" y2="7"></line>
                                             <polyline points="7 7 17 7 17 17"></polyline>
@@ -169,7 +169,7 @@ const FeaturesSplit = ({
                                 )}
                                  data-reveal-container=".split-item">
                                 <Image
-                                    src={require('../../assets/images/personlized.png')}
+                                    src={require('../../assets/images/youtube.jpg')}
                                     alt="Features split 01"
                                     width={528}
                                     height={400}

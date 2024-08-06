@@ -49,13 +49,13 @@
     align-items: center;
     background-color: #333;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
     border-radius: 5px;
-    font-size: 20px;
     text-decoration: none;
     margin-left: 40px;
     vertical-align: middle;
+    height: 20px;
+    font-size: 14px; /* Reduced from 20px */
+    padding: 2px 10px;
 }
 
 .api-doc-button span {
@@ -63,8 +63,8 @@
 }
 
 .api-doc-button svg {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
 }
 
 
@@ -188,10 +188,11 @@
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     margin-left: 40px;
     vertical-align: middle;
+    height: 30px;
 }
 
 .api-doc-button span {
