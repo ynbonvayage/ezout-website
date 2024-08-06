@@ -53,6 +53,21 @@ const FeaturesSplit = ({
         alignTop && 'align-top'
     );
 
+    const FileUploadArea = () => (
+        <div className="file-upload-area">
+            <div className="upload-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+            </div>
+            <p className="upload-text">Drop files or Browse</p>
+            <p className="file-formats">Supported formats: png, jpeg, jpg</p>
+            <button className="select-file-btn">SELECT FILE</button>
+        </div>
+    );
+
 
     return (
         <section
@@ -71,6 +86,13 @@ const FeaturesSplit = ({
                                  data-reveal-container=".split-item">
                                 <h1 className="mt-0 mb-12 personalized-shopping">
                                     Vision API
+                                    <a href="https://docs.ezout.store/docs/vision-detect" className="api-doc-button">
+                                        <span>API Doc</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                                            <polyline points="7 7 17 7 17 17"></polyline>
+                                        </svg>
+                                    </a>
                                 </h1>
                                 <p className="m-0 reduces-cognitive ">
                                     Our advanced computer vision platform provides rapid image analysis and precise object recognition capabilities.
@@ -106,6 +128,15 @@ const FeaturesSplit = ({
                                     style={{borderRadius: '10px'}}/>
                             </div>
                         </div>
+
+                        {/* New "Try the API" section */}
+                        <div className="split-item try-api-section">
+                            <div className="file-upload-container">
+                                <FileUploadArea />
+                            </div>
+                        </div>
+
+
 
                         <div className="split-item ">
                             <div className="split-item-content center-content-mobile reveal-from-left"

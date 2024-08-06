@@ -5,25 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2465fc8b-543a-4f9c-9864-dd7e7a6edbe3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sections/Cta.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sections/FeaturesSplit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sections/FeaturesTiles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sections/Hero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-01.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-03.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-05.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/feature-tile-icon-05.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/settings/base/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/settings/base/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/theme/sections/_features-tiles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/theme/sections/_features-tiles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/Cta.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Cta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/FeaturesSplit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/FeaturesSplit.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sections/FeaturesSplit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/FeaturesSplit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/FeaturesTiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/FeaturesTiles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +176,7 @@
       <workItem from="1722473848895" duration="8244000" />
       <workItem from="1722547077659" duration="5058000" />
       <workItem from="1722616204470" duration="619000" />
+      <workItem from="1722950908799" duration="9385000" />
     </task>
     <servers />
   </component>
